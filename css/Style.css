@@ -80,7 +80,7 @@ body {
     margin-top: 10px;
     width: 70%;
     display: flex;
-    border: solid 1px gray;
+    border: solid 1px var(--lines-color);
     border-right: none;
     align-items: center;
     box-sizing: border-box;
@@ -129,6 +129,10 @@ label {
     border-left: none;
 }
 
+.border_left{
+    border-radius: 0 5px 5px 0;
+}
+
 #nev_par {
     height: 50px;
     padding: 10px 20px;
@@ -137,6 +141,7 @@ label {
 }
 
 #nev_par button {
+    border-radius: 5px;
     display: flex;
     float: right;
     margin-right: 10px;
@@ -144,7 +149,7 @@ label {
     background-color: var(--bg_default);
     border-width: 1px;
     color: black;
-    border-color: gray;
+    border-color: var(--lines-color);
 }
 
 
@@ -186,13 +191,15 @@ label {
 .chiledOfdiv_home_page {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
     width: 240px;
-    height: 400px;
+    height: 300px;
     margin: 5px;
+    border-radius: 10px 10px 10px 10px;
     border: 1px var(--lines-color) solid;
 }
 
 .div_img {
-    height: 55%;
+    border-radius: 10px 10px 0 0;
+    height: 40%;
     width: 100%;
 }
 
@@ -209,7 +216,7 @@ label {
     display: flex;
     flex-direction: column;
     background-color: white;
-    border: 1px solid gray;
+    border: 1px solid var(--lines-color);
     padding: 0 5px;
     margin-top: 10px;
     width: 150px;
@@ -288,7 +295,7 @@ label {
 ion-icon{
     width: 30px;
     height: 17px;
-    color: gray;
+    color:black;
     margin: auto;
 }
 #welcome-div{
@@ -330,7 +337,7 @@ ion-icon{
         border-radius:5px 5px 0px 0px;
         height: 45px;
         width: 90%;
-        border: solid 1px gray;
+        border: solid 1px var(--lines-color);
         border-bottom: 0px;
     }
 
